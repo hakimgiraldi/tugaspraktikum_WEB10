@@ -1,0 +1,87 @@
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Heading */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Table container styling */
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+thead {
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    color: white;
+}
+
+th, td {
+    padding: 12px 20px;
+    text-align: left;
+}
+
+th {
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eaf6ff;
+}
+
+tbody tr:hover {
+    background-color: #d3e9ff;
+    cursor: pointer;
+}
+
+td {
+    font-size: 0.95em;
+    color: #333;
+}
+
+tfoot {
+    background: #f1f1f1;
+    font-weight: bold;
+}
+
+/* Toast notification styling */
+.toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4caf50; /* Green background for success */
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    opacity: 0; /* Hidden by default */
+    transform: translateY(50px); /* Start with downward position */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.toast.show {
+    opacity: 1; /* Make visible */
+    transform: translateY(0); /* Move to original position */
+}
